@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" async></script>
+    <title>Portal 3: Flip Flap</title>
+    <link rel="shortcut icon" type="image/png" href="Assets/Images/favicon.png">
+</head>
+<body>
+    <div class="overlay-text visible">
+        Click to Start!
+        <span class="overlay-text-small">Find and match the cards that corresponds to each other</span>
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        GAME OVER!
+        <span class="overlay-text-small">Try Again? Click to Restart!</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+        VICTORY!
+        <span class="overlay-text-small">Congratulations! The secret code for the next portal is <span style="color:#ffce03"><b>INCLUSIVE</b></span></span>
+        <span class="overlay-text-small">go back to the menu and proceed to your next adventure!</span>
+    </div>
+    <div class="instruction">
+        <img class="instruct-image" src="Assets/Images/instruction.png">
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                TIME: <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                FLIPS: <span id="flips">0</span>
+            </div> 
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/fsl.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/fsl.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/sdeas.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/sdeas.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/hope.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/hope.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/benilde.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/benilde.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/love.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/love.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/lasalle.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/lasalle.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/spirit.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/spirit.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/deaf.png">
+        	</div>	
+        </div>
+        <div class="card">
+        	<div class="card-back card-face">
+                <img class="chalk" src="Assets/Images/New/back.png">
+        	</div>
+        	<div class="card-front card-face">
+                <img class="card-value" src="Assets/Images/New/deaf.png">
+        	</div>	
+        </div>
+    </div>
+</body>
+</html>

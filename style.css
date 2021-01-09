@@ -41,6 +41,22 @@ body {
     padding-top: 50px;
 }
 
+.menu-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    transition: width 100ms ease-in-out, height 100ms ease-in-out;
+}
+
+.menu-image:hover {
+    width: 19%;
+    height: auto;
+}
+
 .game-info-container {
     grid-column: 1 / -1;
     display: flex;
